@@ -8,29 +8,6 @@ const NotesContainer = () => {
       <Example />
       <Example />
       <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
-      <Example />
     </div>
   );
 };

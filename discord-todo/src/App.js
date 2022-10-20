@@ -55,7 +55,7 @@ function App() {
     aight cool beans adios
     */
 
-    <div className="flex bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div className="flex bg-gradient-to-r from-cyan-400 to-blue-300 dark:bg-gradient-r dark:from-purple-400 dark:to-cyan-600 transition-colors duration-1000">
       <SideBar />
       <NotesContainer />
     </div>

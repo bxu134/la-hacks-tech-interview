@@ -5,19 +5,23 @@ import {
   CardFooter,
   Typography,
 } from "@material-tailwind/react";
-
+import Spline from "@splinetool/react-spline";
 export default function Example() {
   return (
     <Card className="w-80 mt-20 bg-white bg-opacity-50 shadow-lg rounded-3xl p-8 hover:rounded-lg hover:rotate-1 hover:scale-110 duration-150">
-      <CardHeader color="blue" className="relative h-56 shadow-none" />
+      <CardHeader color="blue" className="relative h-56 shadow-none">
+        <Spline
+          scene="https://prod.spline.design/tmi2yvOj4huVRqGb/scene.splinecode"
+          className="rounded-3xl"
+        />
+      </CardHeader>
       <CardBody className="text-center">
         <Typography variant="h5" className="mb-2">
-          Cozy 5 Stars Apartment
+          Lorem ipsum
         </Typography>
         <Typography>
-          The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to "Naviglio" where you can enjoy the main night life in
-          Barcelona.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Typography>
       </CardBody>
       <CardFooter divider className="flex items-center justify-between py-3">
