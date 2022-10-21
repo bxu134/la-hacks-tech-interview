@@ -30,7 +30,7 @@ const LandingPage = () => {
         </p>
         <div
           onClick={() => navigate("notes")}
-          class="flex-row flex justify-center items-center outline outline-black p-4 rounded-xl hover:bg-darkmodeendbg duration-300 hover:scale-110 hover:shadow-2xl transition-all"
+          class="flex-row flex justify-center items-center outline outline-black p-4 rounded-xl bg-darkmodestartbg hover:bg-darkmodeendbg duration-300 hover:scale-110 hover:shadow-2xl transition-all"
         >
           <MdSpaceDashboard
             class="relative flex items-center justify-center 
