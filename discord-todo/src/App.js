@@ -28,18 +28,23 @@ const LandingPage = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-
-        <MdSpaceDashboard
-          class="relative flex items-center justify-center 
+        <div
+          onClick={() => navigate("notes")}
+          class="flex-row flex justify-center items-center outline outline-black p-4 rounded-xl hover:bg-darkmodeendbg duration-300 hover:scale-110 hover:shadow-2xl transition-all"
+        >
+          <MdSpaceDashboard
+            class="relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
   bg-lightmodestartbg hover:bg-lightmodeendbg  
   text-lightmodeendbg hover:text-white
 rounded-xl 
     transition-all duration-150 ease-linear
     cursor-pointer shadow-lg"
-          size="28"
-          onClick={() => navigate("notes")}
-        ></MdSpaceDashboard>
+            size="28"
+            onClick={() => navigate("notes")}
+          ></MdSpaceDashboard>
+          <h5 class="font-bold text-lg ml-2 text-black">Go To Notes</h5>
+        </div>
       </Content>
     </Wrapper>
   );
