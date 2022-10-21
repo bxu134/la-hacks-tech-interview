@@ -1,6 +1,7 @@
 import { BsPlus } from "react-icons/bs";
 import { MdSpaceDashboard, MdDarkMode, MdLightMode } from "react-icons/md";
 import useDarkMode from "../hooks/useDarkMode";
+import { BiArrowBack } from "react-icons/bi";
 const SideBar = () => {
   return (
     <div
@@ -11,6 +12,9 @@ const SideBar = () => {
       <Divider />
       <SideBarIcon icon={<MdSpaceDashboard size="28" />} text="Notes" />
       <ThemeToggle />
+      <div class="bottom-0 left-0 m-2 absolute">
+        <SideBarIcon icon={<BiArrowBack size="28" />} text="Back" />
+      </div>
     </div>
   );
 };

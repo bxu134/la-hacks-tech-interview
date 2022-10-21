@@ -1,65 +1,68 @@
 import SideBar from "./components/SideBar";
 import NotesContainer from "./components/NotesContainer";
 import "./App.css";
-
+import Spline from "@splinetool/react-spline";
+import styled from "styled-components";
+import { MdSpaceDashboard } from "react-icons/md";
+import { editableInputTypes } from "@testing-library/user-event/dist/utils";
 function App() {
-  return (
-    // should workSHEEEEEEE, oh i thought it had smth to do with the fact that they had independent bg?
-    // yeah p much
-
-    // the issue was that both the container (below this line)
-    // and the wrapper for the cards had the same styles for bg
-    // so the gradient was stretched smaller in the middle element
-    // making the weird border bit
-    // also use scss
-    // its better <- how so
-    /*
-    before (css):
-    .class {
-      // styles
-    }
-    .class span {
-      // inner styles for span
-    }
-    .class span div {
-      // inner inner styles for div
-    }
-    // on and on
-
-    after (scss (sass)) (btw you use .scss files for better syntax than sass): 
-    .class {
-      // styles
-      span {
-        // inner styles for span
-        div {
-          // inner styles for div
-        }
-      }
-    }
-
-    yeah
-    ok thx
-    jackson W nice
-
-    yeah imma just brute force it for now
-    and then ill learn that later for my nepotism tech internship hehe
-    nice
-    last last thing:
-    check out react router
-    and make tests 
-    i rarely use tests, only if i need to unit test a specific function
-    for a speficic output when it matters a lot but sometimes
-    people like to see that you have the ability to write tests
-    create-react-app gives you jest library by default so write tests with that
-    i see, ill look into that as well, although i dont think it will matter for the tech interview
-    aight cool beans adios
-    */
-
-    <div className="flex bg-gradient-to-r from-cyan-400 to-blue-300 dark:bg-gradient-r dark:from-purple-400 dark:to-cyan-600 transition-colors duration-1000">
-      <SideBar />
-      <NotesContainer />
-    </div>
-  );
+  return <LandingPage />;
 }
 
+const LandingPage = () => (
+  <>
+    <Wrapper>
+      <Spline scene="https://prod.spline.design/yrtSzQB2GcFgXdvL/scene.splinecode" />
+      <Content>
+        <h1>To Do App</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <MdSpaceDashboard></MdSpaceDashboard>
+      </Content>
+    </Wrapper>
+  </>
+);
+
+const NotesPage = () => (
+  <div className="flex bg-gradient-to-r from-cyan-400 to-blue-300 dark:bg-gradient-r dark:from-purple-400 dark:to-cyan-600 transition-colors duration-1000">
+    <SideBar />
+    <NotesContainer />
+  </div>
+);
+const Wrapper = styled.div`
+  font-size: 16px;
+  color: white;
+  .spline {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+  }
+`;
+
+const Content = styled.div`
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  h1 {
+    font-weight: bold;
+    font-size: 70px;
+    color: black;
+    margin: 0;
+    max-wdith: 500px;
+  }
+  p {
+    font-weight: normal
+    line-height: 150%;
+    max-width 300px;
+    color: black;
+  }
+  h1, p {
+    margin: 0 30px 0 100px;
+  }
+`;
 export default App;
