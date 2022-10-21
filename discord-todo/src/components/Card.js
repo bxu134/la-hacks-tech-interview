@@ -9,7 +9,7 @@ import {
 export default function Example() {
   return (
     <Card className="w-80 mt-20 bg-white bg-opacity-50 shadow-lg rounded-3xl p-8 hover:rounded-lg hover:rotate-1 group hover:scale-110 duration-150">
-      <CardHeader className="relative h-56 shadow-lg group-hover:rounded-lg rounded-3xl group-hover:rotate-1 mb-5 bg-blue-200 dark:bg-darkcardheader">
+      <CardHeader className="relative h-56 shadow-lg group-hover:rounded-lg rounded-3xl group-hover:rotate-1 mb-5 bg-opacity-50">
         {/* <Molang3D /> */}
       </CardHeader>
       <CardBody className="text-center rounded-3xl">

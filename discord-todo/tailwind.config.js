@@ -17,6 +17,12 @@ module.exports = {
           100: "#f2f3f5",
         },
         darkcardheader: "#AAA6DE",
+        lightmodestartbg: "#FCE4EC",
+        lightmodeendbg: "#E1ACBD",
+        darkmodestartbg: "#BD607F",
+        darkmodeendbg: "#B15B78",
+        landingbuttonbg: "#B8E3FF",
+        landingiconcolor: "#89A3B3",
       },
       spacing: {
         88: "22rem",

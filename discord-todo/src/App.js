@@ -21,23 +21,32 @@ const LandingPage = () => {
   const navigate = useNavigate();
   return (
     <Wrapper>
-      <Spline scene="https://prod.spline.design/yrtSzQB2GcFgXdvL/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/aPr18i9XwE7YwH3j/scene.splinecode" />
       <Content>
         <h1>To Do App</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Link to="/notes">CLICK ME</Link>
-        {/* <button onClick={() => navigate("notes")}>CLICK ME</button> */}
-        {/* <MdSpaceDashboard onClick={navigate("./notes")}></MdSpaceDashboard> */}
+
+        <MdSpaceDashboard
+          class="relative flex items-center justify-center 
+    h-12 w-12 mt-2 mb-2 mx-auto  
+  bg-lightmodestartbg hover:bg-lightmodeendbg dark:bg-gray-800 
+  text-lightmodeendbg hover:text-white
+rounded-xl 
+    transition-all duration-150 ease-linear
+    cursor-pointer shadow-lg"
+          size="28"
+          onClick={() => navigate("notes")}
+        ></MdSpaceDashboard>
       </Content>
     </Wrapper>
   );
 };
 
 const NotesPage = () => (
-  <div className="flex bg-gradient-to-r from-cyan-400 to-blue-300 dark:bg-gradient-r dark:from-purple-400 dark:to-cyan-600 transition-colors duration-1000">
+  <div className="flex bg-gradient-to-r from-lightmodestartbg to-lightmodeendbg  dark:bg-gradient-r dark:from-darkmodestartbg dark:to-darkmodeendbg transition-colors duration-1000">
     <SideBar />
     <NotesContainer />
   </div>
@@ -58,6 +67,7 @@ position: absolute;
 top: 30px;
 display: flex;
 flex-direction: column;
+align-items: center; 
 gap: 80px;
 h1 {
   font-weight: bold;
