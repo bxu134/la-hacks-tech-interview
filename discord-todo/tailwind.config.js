@@ -5,6 +5,14 @@ module.exports = {
   darkMode: "class", // class, 'media' or boolean
   theme: {
     extend: {
+      animation: {
+        shine: "shine 1s",
+      },
+      keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
+      },
       colors: {
         gray: {
           900: "#202225",

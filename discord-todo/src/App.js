@@ -32,7 +32,7 @@ const LandingPage = () => {
         <MdSpaceDashboard
           class="relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
-  bg-lightmodestartbg hover:bg-lightmodeendbg dark:bg-gray-800 
+  bg-lightmodestartbg hover:bg-lightmodeendbg  
   text-lightmodeendbg hover:text-white
 rounded-xl 
     transition-all duration-150 ease-linear
